@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway'), url('../fonts/raleway-v37-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Bold'), local('Raleway-Bold'), url('../fonts/raleway-v37-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), url('../fonts/montserrat-v31-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --accent: #c7b299;
+    --button: #998675;
+    --button-shadow: #736357;
+    --heading: #555;
+    --text: #8c8c8c;
+    --light: #fbfaf8;
+    --line: #f1eee9;
+    --border: #ebebeb;
+    --dark: #211b19;
+    --brown: #4e3427;
+    --caption-hover: #362f2d;
+    --white: #fff;
+    --font-heading: 'Raleway', Arial, sans-serif;
+    --font-text: 'Montserrat', Arial, sans-serif;
+    --container: 1200px;
+    --radius: 4px;
+    --speed: .3s;
+    --preloader-time: 4s;     
+    --slide-time: 20s;        
+    --slide-step: 4s;
+    --cursor: url('../icon/cursor.svg') 3 2, auto;
+    --cursor-pointer: url('../icon/pointer.svg') 12 12, pointer;
+}

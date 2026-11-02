@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <defs>
+    <mask id="users-front">
+      <rect width="40" height="40" fill="#fff"/>
+      <g fill="#000" stroke="#000" stroke-width="6" stroke-linejoin="round">
+        <circle cx="16" cy="15" r="5"/>
+        <path d="M7 31 V29 A7 7 0 0 1 14 22 H18 A7 7 0 0 1 25 29 V31 Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#d3c7b8" stroke-width="2" stroke-linejoin="round">
+    <g mask="url(#users-front)">
+      <circle cx="23" cy="11" r="5"/>
+      <path d="M14 27 V25 A7 7 0 0 1 21 18 H25 A7 7 0 0 1 32 25 V27 Z"/>
+    </g>
+    <circle cx="16" cy="15" r="5"/>
+    <path d="M7 31 V29 A7 7 0 0 1 14 22 H18 A7 7 0 0 1 25 29 V31 Z"/>
+  </g>
+</svg>

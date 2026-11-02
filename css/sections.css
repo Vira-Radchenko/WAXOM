@@ -1,0 +1,357 @@
+.block2 {
+    padding: 80px 0 60px;
+}
+
+.block2-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block2-item {
+    position: relative;
+    width: 23%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.block2-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 21px;
+    object-fit: contain;
+    transition: filter var(--speed);
+}
+
+.block2-item h2 {
+    margin-bottom: 16px;
+    font-size: 22px;
+    transition: color var(--speed);
+}
+
+.block2-item p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.block2-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 70px;
+    height: 3px;
+    background: var(--line);
+    transform: translateX(-50%);
+    transition: background-color var(--speed);
+}
+
+.block2-item:hover .block2-icon {
+    filter: brightness(0) invert(58%) sepia(1) saturate(70%);
+}
+
+.block2-item:hover h2 {
+    color: var(--accent);
+}
+
+.block2-item:hover::after {
+    background: var(--accent);
+}
+
+.block3 {
+    padding: 40px 0;
+    background: linear-gradient(90deg, var(--dark), var(--brown));
+}
+
+.block3-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 60px;
+}
+
+.block3 h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.block3 h2 span {
+    color: var(--accent);
+}
+
+.block3 p {
+    font-size: 18px;
+    color: #8e7c70;
+}
+
+.block3 .button {
+    flex-shrink: 0;
+    min-width: 170px;
+}
+
+.block4 {
+    padding: 74px 0 80px;
+    text-align: center;
+}
+
+.block4-text {
+    max-width: 800px;
+    margin: 18px auto 32px;
+    line-height: 28px;
+}
+
+.block4-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.block4-filters a {
+    padding: 6px 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.block4-filters a:hover {
+    background: var(--button);
+    border-color: var(--button);
+    color: var(--white);
+}
+
+.block4-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.block4-card {
+    width: 31.62%;
+    text-align: left;
+    background: var(--light);
+}
+
+.block4-photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.block4-photo > img {
+    width: 100%;
+    aspect-ratio: 370 / 237;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.block4-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: #211b19a6;
+    opacity: 0;
+    transition: opacity var(--speed);
+}
+
+.block4-icons a {
+    display: flex;
+}
+
+.block4-icons .icon {
+    width: 27px;
+    height: 27px;
+}
+
+.block4-icons a:hover {
+    opacity: .65;
+    transform: scale(1.15);
+}
+
+.block4-caption {
+    position: relative;
+    min-height: 100px;
+    padding: 27px 30px;
+    transition: background-color var(--speed);
+}
+
+.block4-caption::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 19px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 10px solid var(--light);
+    transition: border-color var(--speed);
+}
+
+.block4-caption h3 {
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--accent);
+    transition: color var(--speed);
+}
+
+.block4-caption p {
+    font-size: 14px;
+    color: #aaa;
+    transition: color var(--speed);
+}
+
+.block4-card:hover .block4-icons {
+    opacity: 1;
+}
+
+.block4-card:hover .block4-photo > img {
+    transform: scale(1.05);
+}
+
+.block4-card:hover .block4-caption {
+    background: var(--caption-hover);
+}
+
+.block4-card:hover .block4-caption::before {
+    border-bottom-color: var(--caption-hover);
+}
+
+.block4-card:hover h3 {
+    color: var(--white);
+}
+
+.block4-card:hover .block4-caption p {
+    color: var(--accent);
+}
+
+.block4-button {
+    margin-top: 40px;
+    min-width: 170px;
+}
+
+.block5 {
+    position: relative;
+    height: 707px;
+    background: var(--dark) url('../images/background-1920x707.jpg') center / cover no-repeat;
+    color: var(--white);
+    text-align: center;
+}
+
+.block5-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background: #211b1966;
+}
+
+.block5-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    background: #00000022;
+}
+
+.block5-play .icon {
+    width: 72px;
+    height: 72px;
+}
+
+.block5-play:hover {
+    background: #c7b29966;
+    box-shadow: 0 0 0 10px #c7b29933;
+    transform: scale(1.08);
+}
+
+.block5 h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.block5 p {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ccc;
+}
+
+.block5-time {
+    margin-top: 25px;
+    font-size: 14px;
+    color: var(--accent);
+}
+
+.block6 {
+    padding-top: 75px;
+    background: var(--light);
+}
+
+.block6-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 60px;
+}
+
+.block6-image {
+    width: 423px;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+
+.block6-text {
+    flex: 1;
+    padding-bottom: 25px;
+}
+
+.block6-text h2 {
+    margin-bottom: 30px;
+}
+
+.block6-text p {
+    line-height: 28px;
+}
+
+.block6-text ul {
+    margin: 26px 0 0;
+    padding: 0 0 0 50px;
+    list-style: none;
+}
+
+.block6-text li {
+    position: relative;
+    padding-left: 32px;
+}
+
+.block6-text li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    background: url('../icon/arrow-circle-icon.svg') center / contain no-repeat;
+    transform: translateY(-50%);
+}

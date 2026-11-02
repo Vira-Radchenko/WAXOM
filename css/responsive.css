@@ -1,0 +1,282 @@
+/* Десктоп */
+@media (max-width: 1200px) {
+    .header-menu {
+        gap: 16px;
+    }
+    .header-icons {
+        margin-left: 25px;
+        gap: 16px;
+    }
+    .header-logo {
+        font-size: 30px;
+    }
+    .header-logo img {
+        width: 52px;
+        height: auto;
+    }
+    .block6-inner {
+        padding-left: 0;
+    }
+    .block6-image {
+        width: 38%;
+    }
+    .block6-text ul {
+        padding-left: 10px;
+    }
+    .block4-caption {
+        padding: 24px 20px;
+    }
+}
+
+/* Таблет */
+@media (max-width: 1000px) {
+    .header {
+        top: 24px;
+    }
+    .header-menu {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .header-icons {
+        margin-left: 18px;
+    }
+    .block1 h1,
+    .block1-title {
+        font-size: 44px;
+    }
+    .block1-subtitle {
+        font-size: 30px;
+    }
+    .block2-list {
+        row-gap: 40px;
+    }
+    .block2-item {
+        width: 47%;
+    }
+    .block4-card {
+        width: 48%;
+    }
+    .block5 {
+        height: 520px;
+    }
+    .block6-text ul {
+        padding-left: 0;
+    }
+    .block6-text li {
+        padding-left: 30px;
+    }
+    .block6-text h2 {
+        font-size: 26px;
+    }
+    .footer-item h3 {
+        font-size: 38px;
+    }
+    .footer-item p {
+        font-size: 12px;
+    }
+}
+
+/* Мобайл */
+@media (max-width: 600px) {
+    .header {
+        top: 20px;
+    }
+    .header-logo {
+        font-size: 28px;
+    }
+    .header-logo img {
+        width: 48px;
+    }
+    .header-icons {
+        gap: 10px;
+        margin-left: 10px;
+    }
+    .header-icons .icon {
+        width: 20px;
+        height: 20px;
+    }
+    .preloader-logo {
+        font-size: 36px;
+    }
+    .preloader-logo img {
+        width: 56px;
+    }
+    .block1-slide {
+        top: 48%;
+        width: 88%;
+    }
+    .block1-subtitle {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .block1 h1,
+    .block1-title {
+        margin-bottom: 18px;
+        font-size: 34px;
+        line-height: 1.15;
+    }
+    .block1-text {
+        font-size: 16px;
+    }
+    .block1 .button {
+        margin-top: 30px;
+    }
+    /* перенос рядка десктоп */
+    .desktop-break {
+        display: none;
+    }
+    /* мобайл стрілка */
+    .block1-arrow {
+        top: auto;
+        bottom: 34px;
+        width: 16px;
+        height: 16px;
+    }
+    .block1-arrow-left {
+        left: calc(50% - 96px);
+    }
+    .block1-arrow-right {
+        right: calc(50% - 96px);
+    }
+    .block1-dots {
+        bottom: 36px;
+    }
+    .block2 {
+        padding: 50px 0;
+    }
+    .block2-list {
+        row-gap: 36px;
+    }
+    .block2-item {
+        width: 100%;
+        max-width: 336px;
+        margin: 0 auto;
+    }
+    .block3 {
+        padding: 32px 0;
+    }
+    .block3-inner {
+        flex-direction: column;
+        gap: 22px;
+        text-align: center;
+    }
+    .block3 h2 {
+        font-size: 26px;
+    }
+    .block3 p {
+        margin-top: 8px;
+        font-size: 16px;
+    }
+    .block4 {
+        padding: 50px 0;
+    }
+    .block4 h2 {
+        font-size: 28px;
+    }
+    .block4-text {
+        margin: 20px 0 26px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .block4-filters {
+        gap: 8px;
+        margin-bottom: 28px;
+    }
+    .block4-filters a {
+        padding: 6px 12px;
+    }
+    .block4-grid {
+        row-gap: 26px;
+    }
+    .block4-card {
+        width: 100%;
+    }
+    .block4-caption {
+        padding: 22px 26px;
+    }
+    .block4-button {
+        margin-top: 30px;
+    }
+    .block5 {
+        height: 500px;
+    }
+    .block5-content {
+        padding: 38px 28px;
+        background: #211b19cc;
+    }
+    .block5-play {
+        flex-shrink: 0;
+        margin-bottom: 26px;
+    }
+    .block5 h2 {
+        margin-bottom: 18px;
+        font-size: 28px;
+    }
+    .block5 p {
+        font-size: 16px;
+    }
+    .block6 {
+        padding-top: 46px;
+    }
+    .block6-inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .block6-text {
+        order: -1;
+        padding-bottom: 0;
+    }
+    .block6-text h2 {
+        margin-bottom: 22px;
+        font-size: 28px;
+    }
+    .block6-text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .block6-text ul {
+        margin-top: 22px;
+        font-size: 14px;
+    }
+    .block6-text li {
+        margin-bottom: 12px;
+        line-height: 26px;
+    }
+    .block6-text li::before {
+        top: 2px;
+        transform: none;
+    }
+    .block6-image {
+        width: 260px;
+        max-width: 85%;
+        align-self: center;
+    }
+    .footer {
+        padding: 46px 0 70px;
+    }
+    .footer-list {
+        row-gap: 36px;
+    }
+    .footer-item {
+        width: 45%;
+    }
+    .footer-item:last-child {
+        width: 100%;
+    }
+    .footer-item h3 {
+        font-size: 42px;
+    }
+    .footer-item::after {
+        margin-top: 18px;
+    }
+    .scroll-buttons {
+        right: 10px;
+        bottom: 10px;
+    }
+    .scroll-buttons a {
+        width: 34px;
+        height: 34px;
+    }
+}
